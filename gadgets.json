@@ -1,0 +1,9 @@
+{
+  "$comment": "Indice de gadgets. Cada uno es un repo propio; en local se clona en la carpeta 'path' dentro de este repo (ignorada por .gitignore).",
+  "gadgets": [
+    { "name": "PrintDeploy",          "repo": "4leX-42/PrintDeploy",     "path": "printdeploy",     "branch": "main", "stack": "C# WinForms .NET 4.8", "install": "build" },
+    { "name": "DocUnlock",            "repo": "4leX-42/DocUnlock",       "path": "docunlock",       "branch": "main", "stack": "Python PySide6",       "install": "release:DocUnlock.exe" },
+    { "name": "Conversor LEDES 98BI", "repo": "4leX-42/LEDES-Converter", "path": "ledes-converter", "branch": "main", "stack": "Python tkinter",       "install": "release:Conversor.LEDES.98BI.exe" },
+    { "name": "Vorterm",              "repo": "4leX-42/Vorterm7.0",      "path": "vorterm",         "branch": "main", "stack": "PowerShell WPF",       "install": "bootstrap.ps1" }
+  ]
+}

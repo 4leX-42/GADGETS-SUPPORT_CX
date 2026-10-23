@@ -1,0 +1,6 @@
+# Cada gadget es su propio repo (gadgets.json); en local se clona aqui dentro
+/printdeploy/
+/docunlock/
+/ledes-converter/
+/vorterm/
+desktop.ini
