@@ -10,6 +10,7 @@ Herramientas de soporte IT para Windows con interfaz propia: ejecutables y apps 
 | **DocUnlock** | Quita protecciones, permisos, firmas y metadatos de PDF y Office, y comprime. Local, sin admin. | Python · PySide6 | [DocUnlock](https://github.com/4leX-42/DocUnlock) |
 | **Conversor LEDES 98BI** | Convierte facturas en PDF al formato LEDES 98BI de las plataformas de facturación legal. | Python · tkinter | [LEDES-Converter](https://github.com/4leX-42/LEDES-Converter) |
 | **Vorterm** | Deja la consola de PowerShell lista en un comando: PowerShell 7, Windows Terminal, fuentes, tema, multipanel. | PowerShell · WPF | [Vorterm7.0](https://github.com/4leX-42/Vorterm7.0) |
+| **PathShrink** | Encuentra las rutas de OneDrive y SharePoint de más de 400 caracteres y propone el mínimo de cambios de nombre, con plan, comparación antes y después y reversión comprobada. EN/ES/PT. | PowerShell · WPF | [PathShrink](https://github.com/4leX-42/PathShrink) |
 
 ## Instalar
 
@@ -31,6 +32,12 @@ $f="$env:TEMP\LEDES98BI.exe"; [Net.ServicePointManager]::SecurityProtocol=3072; 
 
 ```powershell
 Set-ExecutionPolicy -Scope Process Bypass -Force; [Net.ServicePointManager]::SecurityProtocol=3072; $f="$env:TEMP\vorterm-bootstrap.ps1"; irm https://raw.githubusercontent.com/4leX-42/Vorterm7.0/main/bootstrap.ps1 -OutFile $f; & $f
+```
+
+**PathShrink** (instala para el usuario, sin admin, comprueba el SHA-256)
+
+```powershell
+$f="$env:TEMP\install-pathshrink.ps1"; [Net.ServicePointManager]::SecurityProtocol=3072; irm https://raw.githubusercontent.com/4leX-42/PathShrink/main/install.ps1 -OutFile $f; powershell -NoProfile -ExecutionPolicy Bypass -File $f
 ```
 
 **PrintDeploy** se compila (`dotnet build -c Release`): lleva drivers de fabricante que no se
