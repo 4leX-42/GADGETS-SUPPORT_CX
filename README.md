@@ -15,7 +15,7 @@
 | <img src="https://api.iconify.design/lucide/printer.svg?color=%238b949e" width="20"> | [**PrintDeploy**](https://github.com/4leX-42/PrintDeploy) | Detecta marca y modelo de una impresora de red e instala su driver, con página de prueba confirmada. | C# · .NET 4.8 |
 | <img src="https://api.iconify.design/lucide/lock-open.svg?color=%238b949e" width="20"> | [**DocUnlock**](https://github.com/4leX-42/DocUnlock) | Quita protecciones, firmas y metadatos de PDF y Office, y comprime. Local, sin admin. | Python · PySide6 |
 | <img src="https://api.iconify.design/lucide/receipt.svg?color=%238b949e" width="20"> | [**Conversor LEDES 98BI**](https://github.com/4leX-42/LEDES-Converter) | Convierte facturas en PDF al formato LEDES 98BI. | Python · tkinter |
-| <img src="https://api.iconify.design/lucide/square-terminal.svg?color=%238b949e" width="20"> | [**Vorterm**](https://github.com/4leX-42/Vorterm7.0) | Deja la consola lista en un comando: PowerShell 7, Windows Terminal, fuentes y tema. | PowerShell · WPF |
+| <img src="https://api.iconify.design/lucide/square-terminal.svg?color=%238b949e" width="20"> | [**Vorterm**](https://github.com/4leX-42/Vorterm) | Deja la consola lista en un comando: PowerShell 7, Windows Terminal, fuentes y tema. | PowerShell · WPF |
 | <img src="https://api.iconify.design/lucide/folder-tree.svg?color=%238b949e" width="20"> | [**PathShrink**](https://github.com/4leX-42/PathShrink) | Encuentra rutas de OneDrive y SharePoint de más de 400 caracteres y propone el mínimo de cambios, reversibles. | PowerShell · WPF |
 | <img src="https://api.iconify.design/lucide/download.svg?color=%238b949e" width="20"> | [**PastDow**](https://github.com/4leX-42/PastDow) | Pega un enlace y descarga el vídeo o el audio a la mejor calidad. Con yt-dlp. | C# · WebView2 |
 
@@ -53,7 +53,7 @@ $f="$env:TEMP\LEDES98BI.exe"; [Net.ServicePointManager]::SecurityProtocol=3072; 
 <summary><b>Vorterm</b></summary>
 
 ```powershell
-Set-ExecutionPolicy -Scope Process Bypass -Force; [Net.ServicePointManager]::SecurityProtocol=3072; $f="$env:TEMP\vorterm-bootstrap.ps1"; irm https://raw.githubusercontent.com/4leX-42/Vorterm7.0/main/bootstrap.ps1 -OutFile $f; & $f
+Set-ExecutionPolicy -Scope Process Bypass -Force; [Net.ServicePointManager]::SecurityProtocol=3072; $f="$env:TEMP\vorterm-bootstrap.ps1"; irm https://raw.githubusercontent.com/4leX-42/Vorterm/main/bootstrap.ps1 -OutFile $f; & $f
 ```
 </details>
 
