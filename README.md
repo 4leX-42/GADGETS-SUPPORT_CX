@@ -2,10 +2,9 @@
 
 # GADGETS · SUPPORT_CX
 
-Herramientas de soporte IT para Windows, con interfaz propia.<br>
-Cada una vive en su repo; esto es el índice.
+Índice de utilidades GUI para soporte IT en Windows.
 
-<sub>Los scripts sueltos están en <a href="https://github.com/4leX-42/SCRIPTS-SUPPORT_CX">SCRIPTS-SUPPORT_CX</a></sub>
+<sub>Scripts: <a href="https://github.com/4leX-42/SCRIPTS-SUPPORT_CX">SCRIPTS-SUPPORT_CX</a></sub>
 
 </div>
 
