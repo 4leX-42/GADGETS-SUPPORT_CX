@@ -6,6 +6,7 @@
     { "name": "Conversor LEDES 98BI", "repo": "4leX-42/LEDES-Converter", "branch": "main", "stack": "Python tkinter",       "install": "release:Conversor.LEDES.98BI.exe" },
     { "name": "Vorterm",              "repo": "4leX-42/Vorterm",          "branch": "main", "stack": "PowerShell WPF",       "install": "bootstrap.ps1" },
     { "name": "PathShrink",           "repo": "4leX-42/PathShrink",      "branch": "main", "stack": "PowerShell WPF",       "install": "install.ps1" },
-    { "name": "PastDow",              "repo": "4leX-42/PastDow",         "branch": "main", "stack": "C# WebView2 .NET 4.8", "install": "release:PastDow.exe" }
+    { "name": "PastDow",              "repo": "4leX-42/PastDow",         "branch": "main", "stack": "C# WebView2 .NET 4.8", "install": "release:PastDow.exe" },
+    { "name": "FastRemote",           "repo": "4leX-42/FastRemote",      "branch": "main", "stack": "C# WPF .NET 4.8",      "install": "release:FastRemote.exe" }
   ]
 }

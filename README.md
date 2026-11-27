@@ -18,6 +18,7 @@
 | <img src="https://api.iconify.design/lucide/square-terminal.svg?color=%238b949e" width="20"> | [**Vorterm**](https://github.com/4leX-42/Vorterm) | Deja la consola lista en un comando: PowerShell 7, Windows Terminal, fuentes y tema. | PowerShell · WPF |
 | <img src="https://api.iconify.design/lucide/folder-tree.svg?color=%238b949e" width="20"> | [**PathShrink**](https://github.com/4leX-42/PathShrink) | Encuentra rutas de OneDrive y SharePoint de más de 400 caracteres y propone el mínimo de cambios, reversibles. | PowerShell · WPF |
 | <img src="https://api.iconify.design/lucide/download.svg?color=%238b949e" width="20"> | [**PastDow**](https://github.com/4leX-42/PastDow) | Pega un enlace y descarga el vídeo o el audio a la mejor calidad. Con yt-dlp. | C# · WebView2 |
+| <img src="https://api.iconify.design/lucide/monitor.svg?color=%238b949e" width="20"> | [**FastRemote**](https://github.com/4leX-42/FastRemote) | Lanzador de Escritorio remoto: sedes con sus servidores, disponibilidad al abrir, estado real de las sesiones e importación de mRemoteNG. Cada conexión en su mstsc. | C# · WPF |
 
 <br>
 
@@ -70,6 +71,14 @@ $f="$env:TEMP\install-pathshrink.ps1"; [Net.ServicePointManager]::SecurityProtoc
 
 ```powershell
 $f="$env:TEMP\PastDow.exe"; [Net.ServicePointManager]::SecurityProtocol=3072; irm https://github.com/4leX-42/PastDow/releases/latest/download/PastDow.exe -OutFile $f; Start-Process $f
+```
+</details>
+
+<details>
+<summary><b>FastRemote</b> · perfil del usuario y menú Inicio, sin admin</summary>
+
+```powershell
+[Net.ServicePointManager]::SecurityProtocol=3072; $ProgressPreference='SilentlyContinue'; $d="$env:LOCALAPPDATA\Programs\FastRemote"; New-Item -ItemType Directory -Force $d | Out-Null; $f="$d\FastRemote.exe"; irm https://github.com/4leX-42/FastRemote/releases/latest/download/FastRemote.exe -OutFile $f; $s=(New-Object -ComObject WScript.Shell).CreateShortcut("$env:APPDATA\Microsoft\Windows\Start Menu\Programs\FastRemote.lnk"); $s.TargetPath=$f; $s.Save(); Start-Process $f
 ```
 </details>
 
